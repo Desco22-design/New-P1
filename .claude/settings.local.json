@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(run)",
+      "Skill(run:*)",
+      "PowerShell(Start-Process \"c:\\\\Users\\\\Dino Dsgn\\\\Desktop\\\\New P\\\\index.html\")",
+      "PowerShell(Get-ChildItem \"c:\\\\Users\\\\Dino Dsgn\\\\Desktop\\\\New P\\\\Icons1\" -Recurse -File | Select-Object @{N='Folder';E={$_.Directory.Name}}, Name | Sort-Object Folder, Name | Format-Table -AutoSize)",
+      "PowerShell(Get-ChildItem \"c:\\\\Users\\\\Dino Dsgn\\\\Desktop\\\\New P\\\\Icons2\" -Recurse -File | Select-Object @{N='Folder';E={$_.Directory.Name}}, Name | Sort-Object Folder, Name | Format-Table -AutoSize)"
+    ]
+  }
+}

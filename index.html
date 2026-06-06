@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FENIX — Окна и двери премиум класса</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;0,14..32,800;1,14..32,400&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body class="loading">
+
+  <!-- ===================== TOPBAR ===================== -->
+  <header class="topbar" id="topbar">
+    <div class="container topbar__inner">
+
+      <div class="topbar__contact">
+        <div class="topbar__phone-wrap">
+          <img class="topbar__phone-icon" src="Icons2/vuesax/bold/vuesax/bold/call.png" alt="Телефон"/>
+        </div>
+        <div>
+          <div class="topbar__phone">+998 (71) 207-77-77</div>
+          <div class="topbar__hours">с 9:00 до 18:00 пн-пт</div>
+        </div>
+      </div>
+
+      <a href="#" class="logo">fenix</a>
+
+      <div class="topbar__actions">
+        <div class="lang-select">
+          Ru
+          <svg viewBox="0 0 10 6" width="9" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <a href="#contact" class="btn btn--dark btn--pill">
+          Бесплатный замер
+          <svg viewBox="0 0 16 16" width="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 13L13 3M13 3H6M13 3v7"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <ul class="navbar__links">
+        <li><a href="#">О компании <svg class="chevron-svg" viewBox="0 0 10 6" width="9" height="9" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+        <li><a href="#">Продукция <svg class="chevron-svg" viewBox="0 0 10 6" width="9" height="9" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+        <li><a href="#">Калькулятор</a></li>
+        <li><a href="#">Новости</a></li>
+        <li><a href="#">Блог</a></li>
+        <li><a href="#">Франшиза</a></li>
+        <li><a href="#">Рассрочка</a></li>
+        <li><a href="#">Шоурумы</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="container hero__inner">
+
+      <!-- Left: Category Grid -->
+      <div class="hero__left">
+        <div class="category-grid">
+          <a href="#" class="category-card">
+            <div class="category-card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=320&h=200&fit=crop&auto=format" alt="Окна в кухню" loading="lazy"/>
+            </div>
+            <span>Окна в кухню</span>
+          </a>
+          <a href="#" class="category-card">
+            <div class="category-card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=320&h=200&fit=crop&auto=format" alt="Окна в спальню" loading="lazy"/>
+            </div>
+            <span>Окна в спальню</span>
+          </a>
+          <a href="#" class="category-card">
+            <div class="category-card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=320&h=200&fit=crop&auto=format" alt="Окна в гостиную" loading="lazy"/>
+            </div>
+            <span>Окна в гостиную</span>
+          </a>
+          <a href="#" class="category-card">
+            <div class="category-card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=320&h=200&fit=crop&auto=format" alt="Окна для дома" loading="lazy"/>
+            </div>
+            <span>Окна для частного дома</span>
+          </a>
+          <a href="#" class="category-card">
+            <div class="category-card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=320&h=200&fit=crop&auto=format" alt="Фасадные остекления" loading="lazy"/>
+            </div>
+            <span>Фасадные остекления</span>
+          </a>
+          <a href="#" class="category-card">
+            <div class="category-card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=320&h=200&fit=crop&auto=format" alt="Межкомнатные двери" loading="lazy"/>
+            </div>
+            <span>Межкомнатные двери</span>
+          </a>
+        </div>
+        <a href="#" class="btn btn--dark btn--full">
+          Посмотреть все категории
+          <svg viewBox="0 0 16 16" width="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 13L13 3M13 3H6M13 3v7"/></svg>
+        </a>
+      </div>
+
+      <!-- Right: Hero Slider -->
+      <div class="hero__slider" id="heroSlider">
+        <div class="hero-slides" id="heroSlidesTrack">
+
+          <div class="hero-slide active">
+            <div class="hero-slide__bg" style="background: linear-gradient(135deg, #0d0d1a 0%, #111830 40%, #0a1f4a 100%);"></div>
+            <div class="hero-slide__content">
+              <span class="hero-slide__tag">Специальное предложение</span>
+              <h2 class="hero-slide__heading">Окна мечты<br/>в рассрочку от<br/>InfinNasiya</h2>
+              <a href="#" class="btn btn--white">Подробнее
+                <svg viewBox="0 0 16 16" width="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 13L13 3M13 3H6M13 3v7"/></svg>
+              </a>
+            </div>
+            <div class="hero-slide__brand">
+              <span class="hero-logo-sm">fenix</span>
+              <span class="hero-cross">×</span>
+              <span class="hero-partner">InfinBANK</span>
+            </div>
+            <div class="hero-slide__deco">100<br/><small>Million</small></div>
+          </div>
+
+          <div class="hero-slide">
+            <div class="hero-slide__bg" style="background: linear-gradient(135deg, #0a1a0a 0%, #0f2a0f 45%, #0a1f14 100%);"></div>
+            <div class="hero-slide__content">
+              <span class="hero-slide__tag">Новинка 2026</span>
+              <h2 class="hero-slide__heading">Алюминиевые<br/>системы премиум<br/>класса</h2>
+              <a href="#" class="btn btn--white">Подробнее
+                <svg viewBox="0 0 16 16" width="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 13L13 3M13 3H6M13 3v7"/></svg>
+              </a>
+            </div>
+            <div class="hero-slide__deco" style="font-size:120px;">ALU</div>
+          </div>
+
+          <div class="hero-slide">
+            <div class="hero-slide__bg" style="background: linear-gradient(135deg, #1a0800 0%, #2d1200 45%, #1a0800 100%);"></div>
+            <div class="hero-slide__content">
+              <span class="hero-slide__tag">Для бизнеса</span>
+              <h2 class="hero-slide__heading">Фасадные<br/>системы для<br/>вашего бизнеса</h2>
+              <a href="#" class="btn btn--white">Подробнее
+                <svg viewBox="0 0 16 16" width="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 13L13 3M13 3H6M13 3v7"/></svg>
+              </a>
+            </div>
+            <div class="hero-slide__deco" style="font-size:120px;">PRO</div>
+          </div>
+
+          <div class="hero-slide">
+            <div class="hero-slide__bg" style="background: linear-gradient(135deg, #0a0a1a 0%, #16103a 45%, #0a0a1a 100%);"></div>
+            <div class="hero-slide__content">
+              <span class="hero-slide__tag">Доставка и монтаж</span>
+              <h2 class="hero-slide__heading">Пластиковые<br/>окна с монтажом<br/>под ключ</h2>
+              <a href="#" class="btn btn--white">Подробнее
+                <svg viewBox="0 0 16 16" width="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 13L13 3M13 3H6M13 3v7"/></svg>
+              </a>
+            </div>
+            <div class="hero-slide__deco" style="font-size:120px;">PVC</div>
+          </div>
+
+        </div>
+
+        <div class="hero-slider__dots" id="heroDots">
+          <button class="dot active" data-index="0"></button>
+          <button class="dot" data-index="1"></button>
+          <button class="dot" data-index="2"></button>
+          <button class="dot" data-index="3"></button>
+        </div>
+
+        <button class="hero-slider__btn hero-slider__btn--prev" id="heroPrev">&#8249;</button>
+        <button class="hero-slider__btn hero-slider__btn--next" id="heroNext">&#8250;</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== PRODUCTS ===================== -->
+  <section class="section products" data-reveal>
+    <div class="container">
+      <h2 class="section__title">Продукция</h2>
+      <div class="products__viewport">
+        <div class="products__track" id="productsTrack">
+          <a href="#" class="product-card">
+            <div class="product-card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&h=360&fit=crop&auto=format" alt="Пластиковые окна" loading="lazy"/>
+            </div>
+            <span>Пластиковые окна</span>
+          </a>
+          <a href="#" class="product-card">
+            <div class="product-card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=300&h=360&fit=crop&auto=format" alt="Алюминиевые окна" loading="lazy"/>
+            </div>
+            <span>Алюминиевые окна</span>
+          </a>
+          <a href="#" class="product-card">
+            <div class="product-card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=300&h=360&fit=crop&auto=format" alt="Дверные системы" loading="lazy"/>
+            </div>
+            <span>Дверные системы</span>
+          </a>
+          <a href="#" class="product-card">
+            <div class="product-card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=300&h=360&fit=crop&auto=format" alt="Раздвижные системы" loading="lazy"/>
+            </div>
+            <span>Раздвижные системы</span>
+          </a>
+          <a href="#" class="product-card">
+            <div class="product-card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1560448205-4d9b3e6bb6db?w=300&h=360&fit=crop&auto=format" alt="Импортные системы" loading="lazy"/>
+            </div>
+            <span>Импортные системы</span>
+          </a>
+          <a href="#" class="product-card">
+            <div class="product-card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=300&h=360&fit=crop&auto=format" alt="Фасадные системы" loading="lazy"/>
+            </div>
+            <span>Фасадные системы</span>
+          </a>
+          <a href="#" class="product-card">
+            <div class="product-card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=300&h=360&fit=crop&auto=format" alt="Зимние сады" loading="lazy"/>
+            </div>
+            <span>Зимние сады</span>
+          </a>
+        </div>
+      </div>
+      <div class="products__controls">
+        <div class="nav-btns">
+          <button class="nav-btn" id="productsPrev">&#8249;</button>
+          <button class="nav-btn" id="productsNext">&#8250;</button>
+        </div>
+        <a href="#" class="btn btn--dark">Вся продукция
+          <svg viewBox="0 0 16 16" width="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 13L13 3M13 3H6M13 3v7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== MEASURE BAR ===================== -->
+  <div class="measure-bar" data-reveal>
+    <div class="container measure-bar__inner">
+      <div class="measure-bar__title">
+        <span>ВЫЗВАТЬ ЗАМЕРЩИКА</span>
+        <strong>БЕСПЛАТНО</strong>
+      </div>
+      <form class="measure-bar__form" onsubmit="return false;">
+        <input type="text" placeholder="Имя" class="input input--round"/>
+        <input type="tel" placeholder="Телефон" class="input input--round"/>
+        <button type="submit" class="btn btn--dark">Отправить</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="section about" data-reveal>
+    <div class="container about__inner">
+      <div class="about__photo-wrap">
+        <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1200&h=560&fit=crop&auto=format" alt="Завод FENIX" class="about__photo" loading="lazy"/>
+        <div class="about__card">
+          <div class="about__card-logo">fenix</div>
+          <p>FENIX — масштабная специализированная фабрика окон в Узбекистане. Создана в 2016 году, сегодня имеет более 70-ти официальных и партнёрских шоурумов, 7 франчайзи с собственными шоурумами по всей республике. Стремительное развитие говорит о востребованности нашей продукции.</p>
+          <a href="#" class="btn btn--dark">Подробнее
+            <svg viewBox="0 0 16 16" width="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 13L13 3M13 3H6M13 3v7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="stats-grid" data-stagger>
+        <div class="stat-card">
+          <div class="stat-card__number" data-count="1000" data-suffix=" +">0 +</div>
+          <div class="stat-card__label">Опытных специалистов</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__number" data-count="70000" data-suffix="" data-format="space">0</div>
+          <div class="stat-card__label">м² площадь производства</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__number" data-count="2000000" data-suffix=" м²" data-format="space">0 м²</div>
+          <div class="stat-card__label">Конструкций в год</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__number" data-count="15" data-suffix="">0</div>
+          <div class="stat-card__label">Роботизированных линий</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== OFFERS ===================== -->
+  <section class="section offers" data-reveal>
+    <div class="container">
+      <h2 class="section__title">Предложения для покупателей</h2>
+      <div class="offers__grid" data-stagger>
+
+        <div class="offer-card">
+          <div class="offer-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=620&h=360&fit=crop&auto=format" alt="Загородный дом" loading="lazy"/>
+          </div>
+          <div class="offer-card__body">
+            <h3>Решения для загородного дома</h3>
+            <ul>
+              <li><a href="#"><span class="offer-arrow">↗</span> Пергола</a></li>
+              <li><a href="#"><span class="offer-arrow">↗</span> Раздвижные системы</a></li>
+              <li><a href="#"><span class="offer-arrow">↗</span> Секционные ворота</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="offer-card">
+          <div class="offer-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=620&h=360&fit=crop&auto=format" alt="Бизнес" loading="lazy"/>
+          </div>
+          <div class="offer-card__body">
+            <h3>Решения для бизнеса</h3>
+            <ul>
+              <li><a href="#"><span class="offer-arrow">↗</span> Фасадная система</a></li>
+              <li><a href="#"><span class="offer-arrow">↗</span> Офисные перегородки</a></li>
+              <li><a href="#"><span class="offer-arrow">↗</span> Стеклянные ограждения</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="offer-card">
+          <div class="offer-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=620&h=360&fit=crop&auto=format" alt="Импортные системы" loading="lazy"/>
+          </div>
+          <div class="offer-card__body">
+            <h3>Импортные системы</h3>
+            <ul>
+              <li><a href="#"><span class="offer-arrow">↗</span> Tiara Twinmax</a></li>
+              <li><a href="#"><span class="offer-arrow">↗</span> Slide Master</a></li>
+              <li><a href="#"><span class="offer-arrow">↗</span> Гильотина</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== REVIEWS ===================== -->
+  <section class="section reviews" data-reveal>
+    <div class="container">
+      <h2 class="section__title">Отзывы клиентов</h2>
+      <div class="reviews__grid" data-stagger>
+
+        <div class="review-card">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=260&h=200&fit=crop&auto=format" alt="Отзыв 1" loading="lazy"/>
+          <div class="review-card__body">
+            <div class="review-card__date">
+              <img class="icon icon--xs icon--muted" src="Icons1/calendar/calendar-schedule.png" alt=""/>
+              03.07.2025
+            </div>
+            <h4>Продукция FENIX в автосалоне Jetour</h4>
+            <p>Специалисты официального шоурума Fenix установили более 700 м² фасадной системы. Клиент остался доволен результатом.</p>
+            <a href="#" class="review-card__link">youtube.com/@fenix.official ↗</a>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=260&h=200&fit=crop&auto=format" alt="Отзыв 2" loading="lazy"/>
+          <div class="review-card__body">
+            <div class="review-card__date">
+              <img class="icon icon--xs icon--muted" src="Icons1/calendar/calendar-schedule.png" alt=""/>
+              06.02.2025
+            </div>
+            <h4>Клиент установил окна FENIX на свой объект</h4>
+            <p>На видео — пятиэтажная клиника в процессе строительства. Узнайте, какие окна и почему были выбраны для этого здания.</p>
+            <a href="#" class="review-card__link">youtube.com ↗</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="section__footer">
+        <a href="#" class="btn btn--dark">Все отзывы
+          <svg viewBox="0 0 16 16" width="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 13L13 3M13 3H6M13 3v7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== NEWS ===================== -->
+  <section class="section news" data-reveal>
+    <div class="container">
+      <h2 class="section__title">Новости</h2>
+      <div class="news__viewport">
+        <div class="news__track" id="newsTrack">
+
+          <a href="#" class="news-card">
+            <div class="news-card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=420&h=280&fit=crop&auto=format" alt="10 лет" loading="lazy"/>
+              <div class="news-card__overlay">
+                <span class="news-card__date">16.04.2026</span>
+                <p class="news-card__title">FENIX: 10 лет вместе с Вами!</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="news-card">
+            <div class="news-card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=420&h=280&fit=crop&auto=format" alt="Новый шоурум" loading="lazy"/>
+              <div class="news-card__overlay">
+                <span class="news-card__date">04.04.2026</span>
+                <p class="news-card__title">В Ташкенте открылись новые шоурумы FENIX и INART.</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="news-card">
+            <div class="news-card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=420&h=280&fit=crop&auto=format" alt="Хива шоурум" loading="lazy"/>
+              <div class="news-card__overlay">
+                <span class="news-card__date">03.04.2026</span>
+                <p class="news-card__title">В Хиве открылся официальный шоурум FENIX.</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="news-card">
+            <div class="news-card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=420&h=280&fit=crop&auto=format" alt="Новая коллекция" loading="lazy"/>
+              <div class="news-card__overlay">
+                <span class="news-card__date">20.03.2026</span>
+                <p class="news-card__title">Новая коллекция алюминиевых систем 2026.</p>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+      <div class="news__controls">
+        <div class="nav-btns">
+          <button class="nav-btn" id="newsPrev">&#8249;</button>
+          <button class="nav-btn" id="newsNext">&#8250;</button>
+        </div>
+        <a href="#" class="btn btn--dark">Все новости
+          <svg viewBox="0 0 16 16" width="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 13L13 3M13 3H6M13 3v7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PORTFOLIO ===================== -->
+  <section class="section portfolio" data-reveal>
+    <div class="container">
+      <h2 class="section__title">Портфолио</h2>
+      <div class="portfolio__card">
+        <div class="portfolio__img">
+          <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&h=500&fit=crop&auto=format" alt="Agrobank" loading="lazy"/>
+        </div>
+        <div class="portfolio__info">
+          <h3>Agrobank</h3>
+          <p>"Agrobank" — один из крупнейших банков Узбекистана, охватывает всю страну и имеет широкую сеть представительств в Каракалпакстане.</p>
+          <p>"Agrobank" уделяет особое внимание финансированию реального сектора экономики и привлечению свободных средств населения.</p>
+          <div class="portfolio__gallery">
+            <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=190&h=120&fit=crop&auto=format" alt="" loading="lazy"/>
+            <img src="https://images.unsplash.com/photo-1560448205-4d9b3e6bb6db?w=190&h=120&fit=crop&auto=format" alt="" loading="lazy"/>
+            <img src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=190&h=120&fit=crop&auto=format" alt="" loading="lazy"/>
+          </div>
+          <div class="portfolio__nav">
+            <button class="nav-btn nav-btn--light">&#8249;</button>
+            <button class="nav-btn nav-btn--light">&#8250;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PARTNERS ===================== -->
+  <section class="section partners" data-reveal>
+    <div class="container">
+      <h2 class="section__title">Партнёры</h2>
+      <div class="partners__track" data-stagger>
+        <div class="partner-logo-card">Continental</div>
+        <div class="partner-logo-card"><strong>WINK</strong>HAUS</div>
+        <div class="partner-logo-card" style="color:#c8102e;">Roto</div>
+        <div class="partner-logo-card" style="color:#2e7d32;">ВЕЛКАМ</div>
+        <div class="partner-logo-card" style="color:#003087;">REHAU</div>
+        <div class="partner-logo-card" style="color:#c8102e;">akfa</div>
+        <div class="partner-logo-card">KIN LONG</div>
+      </div>
+      <div class="partners__dots">
+        <button class="dot active"></button>
+        <button class="dot"></button>
+        <button class="dot"></button>
+        <button class="dot"></button>
+        <button class="dot"></button>
+        <button class="dot"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SHOWROOMS ===================== -->
+  <section class="section showrooms" data-reveal>
+    <div class="container">
+      <div class="showrooms__header">
+        <div class="showrooms__header-text">
+          <h2 class="section__title" style="margin-bottom:10px;">Шоурумы</h2>
+          <p>Свяжитесь с нами для получения консультации<br/>и оформления заказа. Мы всегда рады помочь.</p>
+        </div>
+        <div class="showrooms__header-actions">
+          <select class="select-input">
+            <option>Ташкент</option>
+            <option>Самарканд</option>
+            <option>Бухара</option>
+            <option>Наманган</option>
+            <option>Андижан</option>
+            <option>Фергана</option>
+            <option>Хива</option>
+            <option>Нукус</option>
+          </select>
+          <a href="#" class="btn btn--dark">Подробнее
+            <svg viewBox="0 0 16 16" width="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 13L13 3M13 3H6M13 3v7"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="showrooms__map">
+        <iframe
+          src="https://www.openstreetmap.org/export/embed.html?bbox=69.1%2C41.2%2C69.5%2C41.42&layer=mapnik&marker=41.31%2C69.27"
+          width="100%" height="440" frameborder="0" loading="lazy"
+          title="Шоурумы FENIX"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="section contact" id="contact" data-reveal>
+    <div class="container">
+      <h2 class="section__title">Связаться с нами</h2>
+      <div class="contact__card">
+
+        <div class="contact__info">
+          <div class="contact__info-logo">fenix</div>
+          <p>Остались вопросы? Свяжитесь с нами или оставьте заявку и наш менеджер перезвонит вам!</p>
+          <ul class="contact__details">
+            <li>
+              <img class="icon icon--sm icon--white" src="Icons2/location.png" alt=""/>
+              Узбекистан, г.Ташкент, ул. Софдил, 132
+            </li>
+            <li>
+              <img class="icon icon--sm icon--white" src="Icons2/vuesax/bold/sms.png" alt=""/>
+              info@fenix.uz
+            </li>
+            <li>
+              <img class="icon icon--sm icon--white" src="Icons2/vuesax/bold/vuesax/bold/call.png" alt=""/>
+              +998 (71) 207-77-77
+            </li>
+          </ul>
+          <div class="contact__socials">
+            <a href="#" class="social-icon" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" width="17" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Telegram">
+              <svg viewBox="0 0 24 24" width="17" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248l-2.012 9.48c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.875.741z"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" width="17" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" width="17" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 001.46 6.42 29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg>
+            </a>
+          </div>
+          <div class="contact__deco-circle"></div>
+          <div class="contact__deco-circle contact__deco-circle--sm"></div>
+        </div>
+
+        <div class="contact__form">
+          <form onsubmit="return false;">
+            <div class="form-row">
+              <div class="form-field">
+                <input type="text" placeholder="Имя *" class="input input--line"/>
+              </div>
+              <div class="form-field">
+                <input type="text" placeholder="Фамилия" class="input input--line"/>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <input type="email" placeholder="Электронная почта" class="input input--line"/>
+              </div>
+              <div class="form-field">
+                <input type="tel" placeholder="Номер телефона *" class="input input--line"/>
+              </div>
+            </div>
+            <div class="form-group">
+              <p class="form-label">Что вас интересует?</p>
+              <div class="checkboxes">
+                <label class="checkbox-label"><input type="checkbox"/> Окна и двери</label>
+                <label class="checkbox-label"><input type="checkbox"/> Раздвижные системы</label>
+                <label class="checkbox-label"><input type="checkbox"/> Фасадные системы</label>
+                <label class="checkbox-label"><input type="checkbox"/> Импортные системы</label>
+              </div>
+            </div>
+            <div class="form-field">
+              <textarea class="input input--textarea" placeholder="Сообщение"></textarea>
+            </div>
+            <div class="form-submit-row">
+              <label class="checkbox-label checkbox-label--small">
+                <input type="checkbox"/>
+                Нажимая «Отправить», вы принимаете <a href="#">условия обработки персональных данных</a>.
+              </label>
+              <button type="submit" class="btn btn--dark">Отправить</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer__top">
+      <div class="footer__brand">
+        <div class="footer__logo">fenix</div>
+        <ul class="footer__contact-list">
+          <li>
+            <img class="icon icon--xs icon--white" src="Icons2/location.png" alt=""/>
+            Узбекистан, г.Ташкент,<br/>ул. Софдил, 132
+          </li>
+          <li>
+            <img class="icon icon--xs icon--white" src="Icons2/vuesax/bold/sms.png" alt=""/>
+            info@fenix.uz
+          </li>
+          <li>
+            <img class="icon icon--xs icon--white" src="Icons2/vuesax/bold/vuesax/bold/call.png" alt=""/>
+            +998 (71) 207-77-77
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__nav">
+        <div class="footer__col">
+          <h4>О компании</h4>
+          <ul>
+            <li><a href="#">Виртуальный тур</a></li>
+            <li><a href="#">Карьера</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Продукция</h4>
+          <ul>
+            <li><a href="#">Пластиковые окна</a></li>
+            <li><a href="#">Алюминиевые окна</a></li>
+            <li><a href="#">Дверные системы</a></li>
+            <li><a href="#">Раздвижные системы</a></li>
+            <li><a href="#">Импортные системы</a></li>
+            <li><a href="#">Фасадные системы</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Франшиза</h4>
+          <ul>
+            <li><a href="#">Хорезм</a></li>
+            <li><a href="#">Фергана</a></li>
+            <li><a href="#">Нукус</a></li>
+            <li><a href="#">Бухара</a></li>
+            <li><a href="#">Самарканд</a></li>
+            <li><a href="#">Андижан</a></li>
+            <li><a href="#">Наманган</a></li>
+            <li><a href="#">Сурхандарья</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Шоурумы</h4>
+          <ul>
+            <li><a href="#">Официальные</a></li>
+            <li><a href="#">Партнёры</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Соцсети</h4>
+          <div class="footer__socials">
+            <a href="#" class="social-icon" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" width="16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Telegram">
+              <svg viewBox="0 0 24 24" width="16" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248l-2.012 9.48c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.875.741z"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" width="16" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" width="16" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 001.46 6.42 29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <span>© 2013–2026 Качественные окна и двери от производителя FENIX. All rights reserved</span>
+        <div class="footer__bottom-links">
+          <a href="#">Политика конфиденциальности</a>
+          <a href="#">Пользовательское соглашение</a>
+        </div>
+        <span class="footer__dev">Создание сайтов <strong>LIFESTYLE CREATIVE</strong></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
