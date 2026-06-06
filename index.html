@@ -11,6 +11,7 @@
 </head>
 <body class="loading">
 
+  <div id="scroll-progress"></div>
   <!-- ===================== TOPBAR ===================== -->
   <header class="topbar" id="topbar">
     <div class="container topbar__inner">
@@ -54,6 +55,11 @@
         <li><a href="#">Рассрочка</a></li>
         <li><a href="#">Шоурумы</a></li>
       </ul>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </nav>
 
@@ -109,6 +115,9 @@
 
       <!-- Right: Hero Slider -->
       <div class="hero__slider" id="heroSlider">
+        <div class="hero-orb hero-orb--1"></div>
+        <div class="hero-orb hero-orb--2"></div>
+        <div class="hero-orb hero-orb--3"></div>
         <div class="hero-slides" id="heroSlidesTrack">
 
           <div class="hero-slide active">
@@ -173,8 +182,8 @@
           <button class="dot" data-index="3"></button>
         </div>
 
-        <button class="hero-slider__btn hero-slider__btn--prev" id="heroPrev">&#8249;</button>
-        <button class="hero-slider__btn hero-slider__btn--next" id="heroNext">&#8250;</button>
+        <button class="hero-slider__btn hero-slider__btn--prev" id="heroPrev" aria-label="Предыдущий слайд">&#8249;</button>
+        <button class="hero-slider__btn hero-slider__btn--next" id="heroNext" aria-label="Следующий слайд">&#8250;</button>
       </div>
 
     </div>
@@ -459,9 +468,9 @@
           <p>"Agrobank" — один из крупнейших банков Узбекистана, охватывает всю страну и имеет широкую сеть представительств в Каракалпакстане.</p>
           <p>"Agrobank" уделяет особое внимание финансированию реального сектора экономики и привлечению свободных средств населения.</p>
           <div class="portfolio__gallery">
-            <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=190&h=120&fit=crop&auto=format" alt="" loading="lazy"/>
-            <img src="https://images.unsplash.com/photo-1560448205-4d9b3e6bb6db?w=190&h=120&fit=crop&auto=format" alt="" loading="lazy"/>
-            <img src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=190&h=120&fit=crop&auto=format" alt="" loading="lazy"/>
+            <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=190&h=120&fit=crop&auto=format" alt="Фасадная система Agrobank — вид 1" loading="lazy"/>
+            <img src="https://images.unsplash.com/photo-1560448205-4d9b3e6bb6db?w=190&h=120&fit=crop&auto=format" alt="Фасадная система Agrobank — вид 2" loading="lazy"/>
+            <img src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=190&h=120&fit=crop&auto=format" alt="Фасадная система Agrobank — вид 3" loading="lazy"/>
           </div>
           <div class="portfolio__nav">
             <button class="nav-btn nav-btn--light">&#8249;</button>
@@ -524,7 +533,9 @@
         <iframe
           src="https://www.openstreetmap.org/export/embed.html?bbox=69.1%2C41.2%2C69.5%2C41.42&layer=mapnik&marker=41.31%2C69.27"
           width="100%" height="440" frameborder="0" loading="lazy"
-          title="Шоурумы FENIX"></iframe>
+          title="Шоурумы FENIX на карте Ташкента">
+          <p class="iframe-fallback">Карта недоступна. <a href="https://www.openstreetmap.org/?mlat=41.31&mlon=69.27" target="_blank" rel="noopener">Открыть на OpenStreetMap ↗</a></p>
+        </iframe>
       </div>
     </div>
   </section>
@@ -614,6 +625,35 @@
     </div>
   </section>
 
+  <!-- ===================== TICKER ===================== -->
+  <div class="ticker-strip" aria-hidden="true">
+    <div class="ticker-track">
+      <span>FENIX — Окна и двери</span>
+      <span class="ticker-dot">·</span>
+      <span>Производство в Узбекистане с 2016</span>
+      <span class="ticker-dot">·</span>
+      <span>Более 70 официальных шоурумов</span>
+      <span class="ticker-dot">·</span>
+      <span>Рассрочка от InfinBank</span>
+      <span class="ticker-dot">·</span>
+      <span>Бесплатный замер и монтаж</span>
+      <span class="ticker-dot">·</span>
+      <span>15 роботизированных линий</span>
+      <span class="ticker-dot">·</span>
+      <span>FENIX — Окна и двери</span>
+      <span class="ticker-dot">·</span>
+      <span>Производство в Узбекистане с 2016</span>
+      <span class="ticker-dot">·</span>
+      <span>Более 70 официальных шоурумов</span>
+      <span class="ticker-dot">·</span>
+      <span>Рассрочка от InfinBank</span>
+      <span class="ticker-dot">·</span>
+      <span>Бесплатный замер и монтаж</span>
+      <span class="ticker-dot">·</span>
+      <span>15 роботизированных линий</span>
+      <span class="ticker-dot">·</span>
+    </div>
+  </div>
   <!-- ===================== FOOTER ===================== -->
   <footer class="footer">
     <div class="container footer__top">
@@ -705,6 +745,37 @@
       </div>
     </div>
   </footer>
+
+  <button id="scroll-top" aria-label="Наверх">↑</button>
+
+  <!-- ===================== MOBILE MENU ===================== -->
+  <div class="mobile-menu__backdrop" id="mobileMenuBackdrop" aria-hidden="true"></div>
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Навигационное меню">
+    <div class="mobile-menu__header">
+      <a href="#" class="logo">fenix</a>
+      <button class="mobile-menu__close" id="mobileMenuClose" aria-label="Закрыть меню">×</button>
+    </div>
+    <nav class="mobile-menu__nav">
+      <ul>
+        <li><a href="#">О компании</a></li>
+        <li><a href="#">Продукция</a></li>
+        <li><a href="#">Калькулятор</a></li>
+        <li><a href="#">Новости</a></li>
+        <li><a href="#">Блог</a></li>
+        <li><a href="#">Франшиза</a></li>
+        <li><a href="#">Рассрочка</a></li>
+        <li><a href="#">Шоурумы</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-menu__footer">
+      <div class="mobile-menu__phone">+998 (71) 207-77-77</div>
+      <div class="mobile-menu__hours">с 9:00 до 18:00 пн-пт</div>
+      <a href="#contact" class="btn btn--dark btn--full">
+        Бесплатный замер
+        <svg viewBox="0 0 16 16" width="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 13L13 3M13 3H6M13 3v7"/></svg>
+      </a>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
